@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nike</title>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/x-icon" href="slike/favicon.ico"/>
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+
+<body>
+	<section>
+	<center>
+
+
+	<div class="vrstica">
+	  <a class="active"href="index.html">Bezierjeva krivulja</a>
+	  <a href="svg.html">SVG slika</a>
+	  <a href="png.html">PNG slika</a>
+	</div>
+	</center>
+
+
+
+	<div align="center">
+	  <h1>Bezierjeva krivulja</h1>
+
+	</div>
+
+
+<div align="center">
+	<canvas id="myCanvas" width="2000" height="700"></canvas>
+	<script>
+
+var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+        ctx.moveTo(353, 393);
+        ctx.bezierCurveTo(586, 436, 1044, 198, 1905, 18);
+        ctx.bezierCurveTo(617, 530, 348, 777, 114, 644);
+        ctx.bezierCurveTo(-126, 464, 183, 123, 290, 8);
+        ctx.bezierCurveTo(181, 197, 202, 359, 353, 393);
+	ctx.closePath();
+	ctx.fillStyle = "black";
+	ctx.fill();
+	ctx.stroke();
+
+
+</script>
+</div>
+
+
+
+<script>
+
+
+function myFunction2() {
+		document.getElementById('myCanvas');
+		document.body.style.background = "white url('slike/mimo.png')";
+		document.body.style.color = "black";
+}
+
+
+function myFunction() {
+        document.body.style.background = "black url('slike/mimo.png')";
+ 		document.body.style.color = "white";
+}
+</script>
+
+
+</section>
+
+	<ul>
+		<li>
+			  <span id="light"onclick="myFunction2()">Svetlo</span>
+				<span id="dark" onclick="myFunction()">Temno</span>
+		</li>
+	</ul>
+
+
+
+
+</body>
+</html>

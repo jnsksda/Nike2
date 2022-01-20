@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nike</title>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/x-icon" href="slike/favicon.ico"/>
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+	<div class="vrstica">
+	  <a href="index.html">Bezierjeva krivulja</a>
+	  <a href="svg.html">SVG slika</a>
+	  <a class="active3"href="png.html">PNG slika</a>
+	</div>
+
+	<div align="center">
+	  <h2>PNG slika</h2>
+	</div>
+
+	<div id="slika" align="center">
+
+
+		<img id="slika1" src="Slike/nike.png">
+	</div>
+
+	<script>
+	function myFunction6() {
+		document.getElementById('slika1').src = 'Slike/nike.png'
+	    document.body.style.background = "white url('slike/mimo.png')";
+		document.body.style.color = "black";
+	}
+	</script>
+
+	<script>
+	function myFunction5() {
+		document.getElementById('slika1').src = 'Slike/nike2.png'
+	    document.body.style.background = "black url('slike/mimo.png')";
+ 		document.body.style.color = "white";
+	}
+	</script>
+
+	<ul>
+		<li>
+			  <span id="light"onclick="myFunction6()">Svetlo</span>
+				<span id="dark" onclick="myFunction5()">Temno</span>
+		</li>
+	</ul>
+
+</body>
+</html>
