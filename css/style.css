@@ -1,0 +1,100 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: monospace;
+  background: url('../slike/mimo.png');
+  background-color: white;
+
+}
+
+.vrstica {
+  font-family: monospace;
+  overflow: hidden;
+  background-color: #454545;
+  text-align: center;
+  height: 55px;
+  font-size: 40px;
+}
+
+.vrstica a {
+
+  color: #f2f2f2;
+  padding: 33px 30px;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  width: 150px;
+  height: 20px;
+
+}
+
+.vrstica a:hover {
+  background-color: #999999;
+  color: white;
+}
+
+.vrstica a.active {
+  background-color: red;
+  color: white;
+
+}
+
+.vrstica a.active2 {
+  background-color: white;
+  color: black;
+}
+
+.vrstica a.active3 {
+  background-color: blue;
+  color: white;
+}
+#myCanvas{
+
+	width:446px;
+  margin-left: 15px
+}
+
+ul{
+
+    position:absolute;
+    top:1px;
+    right:25px;
+    margin:0;
+    padding:0;
+    width:100px;
+    height:20px;
+    z-index:1;
+    cursor: pointer;
+}
+
+ul li{
+
+  list-style:none;
+  width:100%;
+  height:60px;
+  text-align:center;
+  text-transform:uppercase;
+  font-size: 17px;
+  transition:0.5s;
+}
+
+ul li span{
+  display: block;
+  width:100%;
+  height:27px;
+  line-height:30px;
+  color:white;
+
+}
+#footer{
+	display: flex;
+    background-color: #454545;
+    height: 90px;
+	width:100%;
+	position: fixed;
+	bottom:0;
+	
+}
+
+
+
